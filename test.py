@@ -1,8 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
-a = np.array([[1, 0, 2, 1], [0, 5, 1, 1]])
-b = np.array([[1, 0], [0, 1]])
-
-if __name__ == "__main__":
-    print(a.shape)
-    
+a = np.array([[1, 2], [3, 4]])
+b = np.array([[1, 2], [3, 5]])
+print(np.log(np.diagonal(a) / np.diagonal(b)))
